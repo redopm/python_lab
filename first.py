@@ -14,34 +14,33 @@ press  6  to  login  facebook account  :
 press  7  to send email to someone  :   
 press  8  to list all connected ip and mac in your current network  :  
 ''' 
-print options 
-choice=raw_input()
+print (options) 
+choice=int(input())
 # put your if else code here 
-print choice ,type(choice)
+print ("you press", choice )
 
-if choice =='1':
+if choice ==1:
 	webbrowser.open("https://www.google.com")
 
-elif choice == "2":
+elif choice == 2:
 	os.system("whoami")
 
-elif choice =='3':
+elif choice ==3:
 	s=raw_input("search on goole:")
 	webbrowser.open_new_tab("https://www.google.com/search?q="+s)
 
-elif choice == "5":
+elif choice == 5:
 	subprocess.call(["logout"])
 #elif choice == "4":
-elif choice == "6":
+elif choice == 6:
 	webbrowser.open_new_tab("https://www.facebook.com/")
 	
-elif choice =="7":
+elif choice ==7:
 	raw_input("enter your email id :")
-	print "sorry we are working on this"
+	print ("sorry we are working on this")
 
-elif choice == "8":
-
-
-#else:
-	print "selection wrong!"
+#elif choice == 8:
+	
+else:
+	print ("selection wrong!")
              
