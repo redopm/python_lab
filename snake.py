@@ -121,7 +121,9 @@ class snake():
             else:
                 c.draw(surface)
 
-
+win = 0
+s = 0
+snack = 0
 
 def redrawWindow():
     global win
