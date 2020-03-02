@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from csv import writer
 import os
 
-url=input()
+url=input("Put your URL here...")
 responce = requests.get(url)
 soup=BeautifulSoup(responce.text,"html.parser")
 
@@ -18,7 +18,7 @@ print(comment)'''
 #print(soup.get_text())
 #print(soup.find_all())
 
-user_input=input("enter what want to find: ")
+user_input=input("enter what you want to find: ")
 if 'head' in user_input:
     headers=soup.find("head").get_text().replace('\n', '')
     print(headers)
